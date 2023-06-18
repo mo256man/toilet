@@ -1,0 +1,55 @@
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+<script src="jquery-3.7.0.min.js"></script>
+<title>トイレ</title>
+</head>
+<body>
+<h1>トイレ</h1><br>
+<br>
+<table>
+  <tr>
+    <td class="floor">4階</td>
+    <td><div class="room enable" id="4階_南東_男">
+		<table><tr><td class="room" id="4階_南東_男">南東</td></tr><tr><td class="room"><div class="none"></div>
+			<img src="pm.png" id="4階_南東_男_1" class="man">
+			<img src="pm.png" id="4階_南東_男_2" class="man">
+			<img src="pm.png" id="4階_南東_男_3" class="man"></div>
+			<div><img src="cleaning.png" class="overlap hide" id="4階_南東_男_cleaning"></div>
+			<div><img src="caution.png" class="overlap hide" id="4階_南東_男_caution"></div></td></tr>
+		</table></div></td>
+    <td><div class="room enable" id="4階_南東_女">
+		<table><tr><td class="room">南東</td></tr><tr><td class="room"><div></div>
+			<img src="pw.png" id="4階_南東_女_1" class="man">
+			<img src="pw.png" id="4階_南東_女_2" class="man">
+			<img src="pw.png" id="4階_南東_女_3" class="man"></div>
+			<div><img src="cleaning.png" class="overlap hide" id="4階_南東_女_cleaning"></div>
+			<div><img src="caution.png" class="overlap hide" id="4階_南東_女_caution"></div></td></tr>
+		</table></div></td>
+  </tr>
+  <td class="floor">3階</td>
+  <td><div class="room enable" id="3階_南東_男">
+	  <table><tr><td class="room" id="3階_南東_男">南東</td></tr><tr><td class="room"><div class="none"></div>
+		  <img src="pm.png" id="3階_南東_男_1" class="man">
+		  <img src="pm.png" id="3階_南東_男_2" class="man">
+		  <img src="pm.png" id="3階_南東_男_3" class="man"></div>
+		  <div><img src="cleaning.png" class="overlap hide" id="3階_南東_男_cleaning"></div>
+		  <div><img src="caution.png" class="overlap hide" id="3階_南東_男_caution"></div></td></tr>
+	  </table></div></td>
+  <td><div class="room enable" id="3階_南東_女">
+	  <table><tr><td class="room">南東</td></tr><tr><td class="room"><div></div>
+		  <img src="pw.png" id="3階_南東_女_1" class="man">
+		  <img src="pw.png" id="3階_南東_女_2" class="man">
+		  <img src="pw.png" id="3階_南東_女_3" class="man"></div>
+		  <div><img src="cleaning.png" class="overlap hide" id="3階_南東_女_cleaning"></div>
+		  <div><img src="caution.png" class="overlap hide" id="3階_南東_女_caution"></div></td></tr>
+	  </table></div></td>
+</tr>
+</table>
+<hr>
+<button class="btn" id="enable">3階_南東_男　を使用可能にする</button><br>
+<button class="btn" id="cleaning">3階_南東_男　を掃除中にする</button><br>
+<button class="btn" id="caution">3階_南東_男　を呼出中にする</button><br>
+<script src="script.js"></script>
+</body>
+</html>

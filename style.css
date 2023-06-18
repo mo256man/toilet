@@ -1,0 +1,53 @@
+td.floor {
+    border: 1px solid black;
+    font-size:large;
+    font-weight:bold;
+}
+
+td.room {
+    text-align:center;
+    font-weight:bold;
+}
+
+td.man {
+    background-color: lightskyblue;
+}
+
+td.woman {
+    background-color: lightpink;
+}
+
+div.room {
+    border:1px solid black;
+    border-radius:5px;
+}
+
+.overlap {
+	width: 90px;
+    height: 90px;
+	margin: -95px 0px 0;
+}
+
+.hide {
+    visibility:hidden;
+}
+
+.busy {
+	background-color:magenta;
+}
+
+.available {
+    background-color: transparent;
+}
+
+.cleaning {
+    background-color: aquamarine;
+}
+
+.caution {
+    background-color: yellow;
+}
+
+.btn {
+    font-size: large;
+}

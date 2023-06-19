@@ -3,8 +3,8 @@ import requests
 import time
 import pprint
 
-# url = "https://script.google.com/macros/s/AKfycbwnzaNnVT1wYH7StAFkqWehJCPceK6DLbOaB9YrvCPWkq7yDwRIv803Fub8ijGeiKAniQ/exec"
-url = "https://script.google.com/macros/s/AKfycbzkdJs-8NSnWrGwXAPGrhlPb4y-3b18coYq9j9-DmE24-JqWb2lpYXu5zBCzica--XA/exec"
+url = "https://script.google.com/macros/s/AKfycbxII11b0PZok_r89HTzKxvzMqFgrvzzXmovSYnt6eDtg4P44QXUmbehkdqV8lurCVhtDw/exec"
+# url = "https://script.google.com/macros/s/AKfycbzkdJs-8NSnWrGwXAPGrhlPb4y-3b18coYq9j9-DmE24-JqWb2lpYXu5zBCzica--XA/exec"
 headers = {"Content-Type": "application/json"}
 
 # JSON形式でデータを用意してdataに格納

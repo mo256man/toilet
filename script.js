@@ -2,7 +2,7 @@ function push(id) {
 	alert(id);
 }
 
-const url = "https://script.google.com/macros/s/AKfycbwnzaNnVT1wYH7StAFkqWehJCPceK6DLbOaB9YrvCPWkq7yDwRIv803Fub8ijGeiKAniQ/exec";
+const url = "https://script.google.com/macros/s/AKfycbweC1bXFerta9c8ysooNkWcpBe-Kp5IgzEgTffvsMLiGySN59Yrud_REafj8vNKJuVPdA/exec";
 
 async function getdata() {
 	const response = await fetch(url);

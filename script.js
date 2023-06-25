@@ -11,11 +11,14 @@ async function getdata() {
 	result.forEach(dic => {
 		id = dic["id"];
 		stat = dic["status"];
+		$("#"+id).removeClass("busy");
+		$("#"+id).removeClass("cleaning");
+		$("#"+id).removeClass("caution");
 		$("#"+id).addClass(stat);
 
 		// 部屋の状態が変わったらアイコンの表示非表示も変更する
 		const cnt = id.split("_").length	// _で区切られた要素の数
-		if (cnt==3) {
+		if (cnt==3) {						// 部屋ならば
 			$("#"+id+"_cleaning").addClass("hide");
 			$("#"+id+"_caution").addClass("hide");
 			if (stat != "available") {
@@ -26,6 +29,11 @@ async function getdata() {
 }
 
 getdata();
+
+//id=refreshでリフレッシュ
+$("#refresh").on("click", function() {
+	getdata();
+});
 
 
 // class=man（人のマーク）をクリックしたときの関数
@@ -55,7 +63,7 @@ $(".man").on("click", function() {
 // class=btn（ボタン）をクリックしたときの関数
 $(".btn").on("click", function() {
     let myclass = $(this).attr('id');
-	let area_id = "#3階_南東_男";
+	let area_id = "#3F_CT_M";
 	$(area_id).removeClass("available");
 	$(area_id).removeClass("cleaning");
 	$(area_id).removeClass("caution");
@@ -66,3 +74,12 @@ $(".btn").on("click", function() {
 	$(area_id+"_"+myclass).removeClass("hide");
 });
 
+//トグルボタン
+$(".toggle").on("click", function() {
+	$(".toggle").toggleClass("checked");
+	if(!$('input[name="check"]').prop("checked")) {
+	  $(".toggle input").prop("checked", true);
+	} else {
+	  $(".toggle input").prop("checked", false);
+	}
+  });
